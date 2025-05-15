@@ -32,16 +32,16 @@ const HomePage = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation Header */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+        <div className="container flex h-24 items-center justify-between">
+          <div className="flex items-center gap-4">
             <img
-              src="/galaxy-interlink-logo.png"
+              src="/logo.svg"
               alt="Galaxy Interlink Logo"
-              className="h-10"
+              className="h-16"
             />
-            <span className="text-xl font-bold text-primary-dark">
+            {/* <span className="text-xl font-bold text-primary-dark">
               Galaxy Interlink
-            </span>
+            </span> */}
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#plans" className="text-sm font-medium hover:text-primary">
@@ -91,15 +91,15 @@ const HomePage = () => {
             <div className="space-y-6">
               <Badge variant="outline" className="px-3 py-1">
                 <Wifi className="mr-1 h-3 w-3" />
-                Internet Pedesaan Terpercaya
+                Internet Cepat Terpercaya
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 Internet Kecepatan Tinggi untuk{" "}
-                <span className="text-primary">Daerah Pedesaan</span>
+                <span className="text-primary">Daerah Remote</span>
               </h1>
               <p className="text-lg text-muted-foreground">
                 Tetap terhubung dengan internet kecepatan tinggi yang andal,
-                dirancang khusus untuk lokasi terpencil dan pedesaan.
+                dirancang khusus untuk lokasi terpencil.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="gap-2">
@@ -244,22 +244,22 @@ const HomePage = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  name: "Sarah Johnson",
-                  location: "Gunung Kidul, DIY",
+                  name: "Ahmad Zainudin S.T",
+                  location: "PT Bukit Asam",
                   quote:
                     "Setelah bertahun-tahun berjuang dengan internet satelit yang tidak andal, Galaxy Interlink telah menjadi game-changer untuk pertanian keluarga kami. Kami akhirnya dapat menjalankan bisnis kami secara efisien dan anak-anak dapat mengikuti kelas online tanpa gangguan.",
-                  plan: "Premium Pedesaan",
+                  plan: "Kontraktor Tambang",
                 },
                 {
-                  name: "Robert Miller",
-                  location: "Lembah Cisadane, Bogor",
+                  name: "Fahmi Natakusuma S.T",
+                  location: "PT Bukit Asam",
                   quote:
                     "Tinggal 50 kilometer dari kota terdekat, saya tidak pernah berpikir akan memiliki internet yang andal. Sekarang saya menjalankan seluruh bisnis konsultasi saya dari rumah dengan kecepatan yang menyaingi apa yang saya miliki di kota.",
-                  plan: "Bisnis Pedesaan",
+                  plan: "Bisnis Tambang",
                 },
                 {
-                  name: "Emily Thompson",
-                  location: "Tepi Danau, Bali",
+                  name: "Bayu Saputra",
+                  location: "Muara Enim",
                   quote:
                     "Layanan pelanggan adalah yang membedakan Galaxy Interlink. Ketika kami mengalami masalah setelah badai, mereka mengirimkan teknisi di hari yang sama. Layanan seperti itu jarang di daerah pedesaan.",
                   plan: "Standar Pedesaan",
@@ -393,7 +393,7 @@ const HomePage = () => {
                       <Phone className="h-5 w-5 text-primary mt-0.5" />
                       <div>
                         <p className="font-medium">Dukungan Telepon</p>
-                        <p className="text-muted-foreground">(021) 555-0123</p>
+                        <p className="text-muted-foreground">085899731884</p>
                         <p className="text-sm text-muted-foreground">
                           Senin-Jumat: 8am-8pm, Sabtu: 9am-5pm
                         </p>
@@ -405,8 +405,7 @@ const HomePage = () => {
                       <div>
                         <p className="font-medium">Kantor Utama</p>
                         <p className="text-muted-foreground">
-                          Jl. Pedesaan No. 123, Kabupaten Bogor, Jawa Barat
-                          16810
+                          Ruko 10 N0 2 Kemang Manis Palembang Sumatera Selatan
                         </p>
                       </div>
                     </div>
@@ -459,7 +458,7 @@ const HomePage = () => {
               </div>
               <p className="text-sm text-muted-foreground mb-4">
                 Menyediakan internet kecepatan tinggi yang andal untuk komunitas
-                pedesaan sejak 2010.
+                pedesaan sejak 2022.
               </p>
             </div>
             <div>
