@@ -51,7 +51,7 @@ const defaultPlans: Plan[] = [
     downloadSpeed: 10,
     uploadSpeed: 2,
     dataCap: "150 GB",
-    price: 49.99,
+    price: 250.000,
     features: [
       "Standard Installation",
       "Basic Technical Support",
@@ -67,7 +67,7 @@ const defaultPlans: Plan[] = [
     downloadSpeed: 25,
     uploadSpeed: 5,
     dataCap: "300 GB",
-    price: 69.99,
+    price: 350.000,
     features: [
       "Standard Installation",
       "24/7 Technical Support",
@@ -90,7 +90,7 @@ const defaultPlans: Plan[] = [
     downloadSpeed: 50,
     uploadSpeed: 10,
     dataCap: "500 GB",
-    price: 89.99,
+    price: 750.000,
     features: [
       "Priority Installation",
       "24/7 Premium Support",
@@ -115,7 +115,7 @@ const defaultPlans: Plan[] = [
     downloadSpeed: 25,
     uploadSpeed: 5,
     dataCap: "Unlimited",
-    price: 99.99,
+    price: 0,
     features: [
       "Standard Installation",
       "24/7 Technical Support",
@@ -181,11 +181,10 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
     <div className="w-full bg-white p-6 rounded-xl shadow-md">
       <div className="mb-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-2">
-          Internet Service Plans
+          Paket Internet
         </h2>
         <p className="text-gray-600">
-          Compare our plans to find the perfect fit for your rural connectivity
-          needs
+          Bandingkan paket layanan internet dan sesuaikan dengan keperluan anda
         </p>
       </div>
 
@@ -204,13 +203,13 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
                   className="cursor-pointer"
                   onClick={() => requestSort("downloadSpeed")}
                 >
-                  Download Speed
+                  Kecepatan Download
                 </TableHead>
                 <TableHead
                   className="cursor-pointer"
                   onClick={() => requestSort("uploadSpeed")}
                 >
-                  Upload Speed
+                  Kecepatan Upload
                 </TableHead>
                 <TableHead
                   className="cursor-pointer"
@@ -222,7 +221,7 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
                   className="cursor-pointer"
                   onClick={() => requestSort("price")}
                 >
-                  Monthly Price
+                  Biaya
                 </TableHead>
                 <TableHead>Features</TableHead>
                 <TableHead></TableHead>
@@ -260,10 +259,10 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
                   <TableCell>
                     <div className="flex flex-col">
                       <span className="font-bold">
-                        ${plan.price.toFixed(2)}/mo
+                        Rp {plan.price.toFixed(3)}/bulan
                       </span>
                       <span className="text-xs text-gray-500">
-                        + taxes & fees
+                        + pajak & layanan
                       </span>
                     </div>
                   </TableCell>
@@ -277,7 +276,7 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
                           className="text-blue-600 cursor-pointer"
                           onClick={() => handlePlanSelect(plan)}
                         >
-                          +{plan.features.length - 2} more
+                          +{plan.features.length - 2} detail
                         </li>
                       )}
                     </ul>
@@ -327,10 +326,10 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
               <div className="space-y-2">
                 <h4 className="font-medium">Price</h4>
                 <p className="text-xl font-bold">
-                  ${selectedPlan.price.toFixed(2)}/mo
+                  Rp {selectedPlan.price.toFixed(3)}/bulan
                 </p>
                 <p className="text-xs text-gray-500">
-                  + applicable taxes and fees
+                   + pajak & layanan
                 </p>
               </div>
 
@@ -356,7 +355,7 @@ const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
             </div>
 
             <div className="mt-2">
-              <h4 className="font-medium mb-2">All Features</h4>
+              <h4 className="font-medium mb-2">Semua Fitur</h4>
               <ul className="grid grid-cols-2 gap-2">
                 {selectedPlan.features.map((feature, index) => (
                   <li key={index} className="flex items-center gap-1 text-sm">
